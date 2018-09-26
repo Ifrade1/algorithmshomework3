@@ -16,10 +16,10 @@ Which should produce the following output:
 46
  
 Your program should be accompanied by a Makefile. When compiled with the command ‘make’, an executable called func should be created. That executable will parse input from its standard input and produce all output in its standard output. Unless redirected, standard output will be expected to appear in the terminal where your program is run. No other output except the exact required output mentioned above should be sent to the standard output.
+
 You should archive your files using zip. Your archive should not include any directories. The make utility should run correctly and create the appropriate executable in the directory where the files are extracted. This is the way it will be tested. Tests will be performed by an automated script. Failure to correctly create the executable with make or run the executable in the directory of extraction will result in a grade of 0.
+
 My recommendation for learning the particulars of C, especially as related to usage of pointers, would be to consult the classic book The C Programming Language
- (Links to an external site.)
-Links to an external site.
  by Kernighan and Ritchie, the latter being the creator of C. This is a book that is worth acquiring and displaying on your shelf for appropriate geek credit. With its last edition published in 1988, you can be assured it will not become obsolete any day soon!
 On the internet you can find a variety of other tutorials for C, in case you have a need for them.
 Please program in ANSI C. Do not link any non-standard libraries that would not be included with an ANSI C compiler. The gcc compiler or a compatible one should be your primary choice. Please test your programs in the Un*x lab on a terminal before submitting.
