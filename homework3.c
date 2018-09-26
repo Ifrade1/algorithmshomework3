@@ -1,8 +1,9 @@
 #include <stdio.h>
-int main() {
+int main(void) {
 
     int n;//number the user inputs
-    scanf("%d", &n);// scans in the input
-    printf("%d", 3*n+7); //prints out the output
+    while(scanf("%d", &n) !=EOF){
+    printf("%d\n", 3*n+7, "\n");
+
 }
 
