@@ -1,7 +1,7 @@
 #include <PA0make.h>
 
 int main(void){
-  myPrintPA0make();
+  myPrintPA0Make();
   return(0);
   
   }
