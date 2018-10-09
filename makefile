@@ -1,4 +1,4 @@
-CC =cc
+CC =gcc
 CFLAGS = -std=c99 -pedantic -Wall
 OBJECTS = PAOmake.o
 all = PA0
