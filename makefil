@@ -1,0 +1,28 @@
+IDIR =../include
+CC=gcc
+CFLAGS=-I$(IDIR)
+
+ODIR= PA0make.o PA0func.o
+LDIR =../lib
+
+LIBS=-lm
+
+_DEPS = PA0make.h
+DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
+
+_OBJ = PA0make.o PA0func.o 
+OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+
+
+$(ODIR)/%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+PA0make: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS) PA0make.c
+PA0func: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS) PA0func.c
+
+.PHONY: clean
+
+clean:
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
